@@ -1,0 +1,13 @@
+-Process
+-Thread
+-Thread Types
+-Thread Scheduler(may employ round robin schedule to provide equal cpu cycles for your threads) and context switch
+-Thread Priorities
+-Creation of threads - extends Thread and Creating Runnable
+    -Creating deamon thread
+-Thread execution sequence
+-Thread sleep
+-Thread priority and Join
+-Executor Service - creating single thread executor, shutdown, shutdownNow
+-submitting tasks to executor with submit and execute
+-Callable vs Runnable

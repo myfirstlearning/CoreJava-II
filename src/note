@@ -1,0 +1,27 @@
+
+Input/Output
+--java.io.package
+-File class (java.io.File)
+-file itself, directory
+-new File("path of the file") (C:/users/appi/a.txt)
+-Absolute vs Relative Path (a.txt,/appi/a.txt, ../a.txt)
+
+--Streams(I/O streams)
+-Byte Streams - byte and binary formats
+-Character Streams - strings and characters, works well with textual data
+
+--Builtin steams
+-System.out
+-System.in
+-System.err
+
+--Low level vs High level streams
+-low level streams directly interact with the file system
+-high level stream wraps the low level stream and can also take a high level stream as input
+ex: BufferReader reader = new BufferReader(new FileReader("abc.txt"));
+    ObjectInputStream os = new ObjectInputStream(new BufferedInputStream(new FileInputStream("abc.txt"));)
+-we can not mix readers, writers, inputstreams, outputstreams and use them
+ex: BufferedReader reader = new BuffereReader(new FileWriter());
+    BufferedInputStream stream = new BufferedInputStream(new FileOutputStream());
+-high level stream cannot directly interact with the filesystem directly
+

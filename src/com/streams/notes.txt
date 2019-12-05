@@ -1,0 +1,21 @@
+//Functional Interface
+Supplier - T get() {return T} -> Supplier<String> s =()->{return new String;}
+Consumer - void accept(T t){} -> Consumer<String> c = (t) -> System.out.println(t); list.forEach((t)->System.out.println(t));
+BiConsumer - void accept(T t, U u) {} -> BiConsumer<String, String> bc = (t,u)->{t=t+u}
+Predicate - boolean test(T t) {return true/false}
+BiPredicate - boolean test(T t, U u) {return true/false}
+Function - R apply(T t){}-> Function<String,Integer> -> (t)->{return r;}
+BiFunction - R apply(T t, U u)-> BiFunction<T,U,R> -> (t,u)-> {return r;}
+UnaryOperator - T apply(T t) {return t} - UnaryOperator<T> = (t)->{return t}
+BinaryOperator - T apply(T t1, T t2) {return t1+t2} - BinaryOperator<T> = (t1, t2)-> {return T}
+
+
+Stream -> continous flow of data
+finite stream -> stops at some point(ends with a terminal operation)
+infinite stream -> runs infinite
+
+Stream -> assembly process of anything
+
+Finite streams
+-Intermediate Operations
+-Terminal Operations
